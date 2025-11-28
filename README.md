@@ -30,5 +30,3 @@ By using this tool, **you accept full responsibility** for your actions.
 
 ---
 
-## 📂 Project Structure
-
